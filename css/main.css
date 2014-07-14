@@ -1,0 +1,45 @@
+/* MAIN CSS */
+
+.minion{
+	background-image: url('../assets/images/batman_minion.jpg');
+	background-repeat: no-repeat;
+	width: 1000px;
+	height: 1000px;
+	position: relative;
+}
+
+.minion_eye{
+	background-image: url('../assets/images/minion_eye.jpg');
+	background-repeat: no-repeat;
+	width: 130px;
+	height: 130px;
+	position: absolute;
+	margin-left: 330px;
+	margin-top: 300px;
+
+	/* Animation goes here */
+	animation: example 2s; 
+	animation-iteration-count: infinite; 
+	-webkit-animation: example 2s; /* Safari & Chrome */
+	-webkit-animation-iteration-count: infinite;
+	/* End Animation */
+
+}
+ 
+@keyframes example { 
+	0%  {transform: translate(0px,0px);}
+	16%  {transform: translate(-40px,-40px);}
+	32%  {transform: translate(40px, -40px);}
+	50%  {transform: translate(40px, 40px);}
+	70%  {transform: translate(-40px,40px); } 
+	100%  {transform: translate(0px,0px);}
+}
+ 
+@-webkit-keyframes example { /*Safari & Chrome */
+	0%  {-webkit-transform: translate(0px,0px);}
+	16%  {-webkit-transform: translate(-40px,-40px);}
+	32%  {-webkit-transform: translate(40px, -40px);}
+	50%  {-webkit-transform: translate(40px, 40px);}
+	70%  {-webkit-transform: translate(-40px,40px); } 
+	100%  {-webkit-transform: translate(0px,0px);}
+}
